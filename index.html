@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reva Rahmalia Putri</title>
+<meta name="description" content="Curriculum Vitae Reva Rahmalia Putri - Siswa SMKN Sukaresik, Pagerageung Kab. Tasikmalaya.">
+<meta name="theme-color" content="#3d2c1a">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Reva Rahmalia Putri">
+<meta property="og:description" content="Curriculum Vitae - Siswa SMKN Sukaresik, Pagerageung Kab. Tasikmalaya.">
+<meta property="og:image" content="foto-reva.jpeg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233d2c1a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23f5f0e6' text-anchor='middle'%3ERR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coklat:#3d2c1a;
+    --coklat-2:#5e432c;
+    --krem:#f5f0e6;
+    --beige:#e9e2cf;
+    --emas:#b9a07e;
+    --emas-soft:#d8c9b0;
+    --ink:#2b2721;
+    --muted:#6f6653;
+    --line:#ddd5c2;
+    --bg:#f7f3eb;
+    --card:#fcfbf7;
+    --radius:18px;
+    --shadow:0 12px 40px rgba(61,44,26,.12);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* ===== Latar belakang beranimasi (elegan, tidak ramai) ===== */
+  .bg-anim{
+    position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;
+    background:linear-gradient(180deg,#faf7f1 0%,#f6f1e7 45%,#f2ebdd 100%);
+  }
+  .bg-anim span{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;will-change:transform}
+  .bg-anim span:nth-child(1){
+    width:460px;height:460px;top:-130px;left:-110px;
+    background:radial-gradient(circle at 35% 35%,#e3cfae,#c6a97c);
+    animation:floatA 16s ease-in-out infinite;
+  }
+  .bg-anim span:nth-child(2){
+    width:400px;height:400px;bottom:-150px;right:-90px;
+    background:radial-gradient(circle at 60% 40%,#e8d6c2,#b9986f);
+    animation:floatB 19s ease-in-out infinite;
+  }
+  .bg-anim span:nth-child(3){
+    width:300px;height:300px;top:42%;left:58%;
+    background:radial-gradient(circle at 50% 50%,#f0e6d6,#dccbb1);
+    animation:floatC 22s ease-in-out infinite;
+  }
+  .bg-anim::after{
+    content:"";position:absolute;inset:0;
+    background-image:
+      linear-gradient(rgba(61,44,26,.045) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(61,44,26,.045) 1px,transparent 1px);
+    background-size:46px 46px;
+  }
+  @keyframes floatA{
+    0%,100%{transform:translate(0,0) scale(1) rotate(0deg)}
+    25%{transform:translate(80px,30px) scale(1.1) rotate(4deg)}
+    50%{transform:translate(40px,70px) scale(1.15) rotate(-3deg)}
+    75%{transform:translate(-30px,40px) scale(1.05) rotate(2deg)}
+  }
+  @keyframes floatB{
+    0%,100%{transform:translate(0,0) scale(1) rotate(0deg)}
+    25%{transform:translate(-60px,-50px) scale(1.1) rotate(-5deg)}
+    50%{transform:translate(-30px,-80px) scale(1.18) rotate(3deg)}
+    75%{transform:translate(20px,-40px) scale(1.06) rotate(-2deg)}
+  }
+  @keyframes floatC{
+    0%,100%{transform:translate(0,0) scale(1) rotate(0deg)}
+    25%{transform:translate(90px,-40px) scale(.95) rotate(6deg)}
+    50%{transform:translate(50px,60px) scale(1.1) rotate(-4deg)}
+    75%{transform:translate(-40px,30px) scale(1.02) rotate(2deg)}
+  }
+  /* ===== Lapisan kartun lucu (bergerak) ===== */
+  .cartoons{
+    position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+  }
+  .cartoon{
+    position:absolute;font-size:clamp(1.6rem,3vw,2.4rem);
+    opacity:.55;filter:drop-shadow(0 4px 8px rgba(61,44,26,.18));
+    will-change:transform;user-select:none;
+  }
+  .cartoon.c1{top:8%;left:6%;animation:drift1 18s ease-in-out infinite}
+  .cartoon.c2{top:14%;right:8%;animation:drift2 22s ease-in-out infinite}
+  .cartoon.c3{top:46%;left:3%;animation:drift3 26s ease-in-out infinite}
+  .cartoon.c4{bottom:18%;right:6%;animation:drift4 20s ease-in-out infinite}
+  .cartoon.c5{top:72%;left:12%;animation:drift5 24s ease-in-out infinite}
+  .cartoon.c6{top:30%;right:14%;animation:drift6 19s ease-in-out infinite}
+  .cartoon.c7{bottom:8%;left:40%;animation:drift7 28s ease-in-out infinite}
+  .cartoon.c8{top:60%;right:2%;animation:drift8 23s ease-in-out infinite}
+  @keyframes drift1{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(40px,-30px) rotate(15deg)}}
+  @keyframes drift2{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(-50px,40px) rotate(-18deg)}}
+  @keyframes drift3{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(30px,50px) rotate(20deg)}}
+  @keyframes drift4{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(-40px,-35px) rotate(-12deg)}}
+  @keyframes drift5{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(60px,20px) rotate(16deg)}}
+  @keyframes drift6{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(-30px,-50px) rotate(-14deg)}}
+  @keyframes drift7{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(50px,-25px) rotate(10deg)}}
+  @keyframes drift8{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(-45px,35px) rotate(-16deg)}}
+  /* kartun kecil yang "mengambang" naik-turun */
+  .cartoon.bounce{animation-duration:4s;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
+  .cartoon.b1{bottom:6%;left:50%;font-size:2.6rem;animation:bob 3.6s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-22px)}}
+  /* Animasi muncul saat digulir */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  /* Tombol WhatsApp mengapung */
+  .wa-float{
+    position:fixed;right:20px;bottom:20px;z-index:80;
+    display:inline-flex;align-items:center;gap:10px;
+    padding:13px 20px;border-radius:999px;text-decoration:none;
+    font-weight:700;font-size:.9rem;color:#fff;
+    background:linear-gradient(135deg,#25D366,#128C7E);
+    box-shadow:0 12px 30px rgba(18,140,126,.42);
+    transition:transform .2s,box-shadow .2s;
+  }
+  .wa-float:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 16px 34px rgba(18,140,126,.5)}
+  .wa-float svg{width:20px;height:20px;flex-shrink:0}
+  .wa-float::after{
+    content:"";position:absolute;inset:0;border-radius:999px;
+    animation:pulseWA 2.4s ease-out infinite;
+  }
+  @keyframes pulseWA{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}
+    70%{box-shadow:0 0 0 20px rgba(37,211,102,0)}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+  }
+  a.chip{text-decoration:none}
+  a.chip:hover{background:rgba(255,255,255,.2);border-color:var(--emas-soft)}
+  .btn-wa{
+    color:#0f2e26;
+    background:linear-gradient(135deg,#7ce6ad,#25D366 55%,#128C7E);
+    border:1px solid rgba(18,140,126,.5);
+    box-shadow:0 8px 22px rgba(18,140,126,.35);
+  }
+  .btn-wa:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(18,140,126,.45)}
+  .mini-btn{
+    display:inline-flex;align-items:center;gap:8px;margin-top:12px;
+    text-decoration:none;font-size:.8rem;font-weight:700;
+    padding:8px 14px;border-radius:999px;color:#f5f0e6;
+    background:linear-gradient(135deg,#5e432c,#3d2c1a);
+    border:1px solid rgba(185,160,126,.55);
+    transition:.2s;
+  }
+  .mini-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(61,44,26,.3)}
+  .sp-embed{display:block;width:100%;border:0;border-radius:12px;background:#f2ece1}
+  @media (prefers-reduced-motion: reduce){
+    .bg-anim span,.wa-float::after,.cartoon{animation:none}
+    .reveal{opacity:1;transform:none;transition:none}
+  }
+  .topbar{
+    height:6px;
+    background:linear-gradient(90deg,#3d2c1a 0%,#5e432c 20%,#b9a07e 50%,#e9e2cf 55%,#b9a07e 60%,#5e432c 80%,#3d2c1a 100%);
+  }
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(252,251,247,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1080px;margin:0 auto;
+    padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--coklat)}
+  .brand-mark{
+    width:40px;height:40px;border-radius:12px;flex-shrink:0;
+    display:grid;place-items:center;color:#f5f0e6;font-weight:700;font-size:.95rem;
+    background:linear-gradient(135deg,#3d2c1a 20%,#5e432c 55%,#b9a07e 130%);
+    border:1px solid rgba(185,160,126,.5);
+    letter-spacing:.02em;
+  }
+  .brand b{font-size:.95rem;letter-spacing:.02em}
+  .brand small{display:block;font-weight:500;color:var(--muted);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
+  .nav-links{display:flex;gap:6px;flex-wrap:wrap}
+  .nav-links a{
+    text-decoration:none;color:var(--ink);font-size:.88rem;font-weight:500;
+    padding:8px 14px;border-radius:999px;transition:.2s;
+  }
+  .nav-links a:hover{background:var(--krem);color:var(--coklat)}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    text-decoration:none;font-weight:600;font-size:.9rem;
+    padding:11px 20px;border-radius:999px;border:1px solid transparent;
+    cursor:pointer;transition:.2s;
+  }
+  .btn-primary{
+    color:#f5f0e6;
+    background:linear-gradient(135deg,#6f563c 0%,#3d2c1a 50%,#291d12 100%);
+    box-shadow:0 8px 22px rgba(61,44,26,.35);
+    border:1px solid rgba(61,44,26,.5);
+  }
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(61,44,26,.45)}
+  .btn-ghost{background:transparent;border-color:rgba(233,226,207,.6);color:#f5f0e6}
+  .btn-ghost:hover{border-color:var(--emas-soft);background:rgba(233,226,207,.1)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  /* HERO — coklat tua + krem-beige */
+  .hero{
+    margin:28px 0 0;
+    border-radius:22px;overflow:hidden;
+    background:
+      radial-gradient(500px 220px at 12% 0%, rgba(185,160,126,.35), transparent 60%),
+      radial-gradient(600px 280px at 90% 100%, rgba(185,160,126,.25), transparent 60%),
+      linear-gradient(135deg,#291d12 0%,#3d2c1a 45%,#4f3725 75%,#5e432c 100%);
+    border:1px solid rgba(185,160,126,.55);
+    box-shadow:var(--shadow);
+    position:relative;
+  }
+  .hero::after{
+    content:"";position:absolute;left:40px;right:40px;bottom:0;height:1px;
+    background:linear-gradient(90deg,transparent,rgba(217,200,172,.9),transparent);
+  }
+  .hero-inner{
+    display:grid;grid-template-columns:250px 1fr;gap:32px;
+    padding:42px 40px 38px;align-items:center;
+  }
+  .photo-wrap{text-align:center}
+  .photo{
+    width:210px;height:250px;margin:0 auto;
+    border-radius:16px;background:#fbf7ef;
+    border:1px solid var(--emas);
+    outline:5px solid rgba(185,160,126,.25);
+    box-shadow:0 16px 36px rgba(20,14,8,.45);
+    display:grid;place-items:center;position:relative;overflow:hidden;
+  }
+  .photo::before{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(160deg,#fbf7ef 0%,#f5f0e6 60%,#ebe2d0 100%);
+  }
+  .photo img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;z-index:2;
+  }
+  .photo span{
+    position:relative;z-index:1;
+    font-family:'Playfair Display',serif;
+    font-size:3.6rem;font-weight:700;color:var(--coklat);
+    line-height:1;
+  }
+  .photo small{
+    position:relative;z-index:1;display:block;
+    font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--coklat-2);margin-top:8px;font-weight:700;
+  }
+  .photo-badge{
+    display:inline-block;margin-top:16px;
+    font-size:.76rem;font-weight:600;letter-spacing:.06em;
+    color:#f5f0e6;
+    background:rgba(94,67,44,.45);
+    border:1px solid rgba(217,200,172,.6);
+    padding:7px 14px;border-radius:999px;
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:#f5f0e6;
+    background:rgba(94,67,44,.45);
+    border:1px solid rgba(217,200,172,.6);
+    padding:7px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .eyebrow i{width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#f5f0e6,#b9a07e);display:inline-block}
+  h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2rem,4.5vw,3rem);
+    line-height:1.12;color:#ffffff;letter-spacing:-.01em;
+  }
+  h1 em{
+    font-style:normal;
+    background:linear-gradient(90deg,#f5f0e6,#d8c9b0 45%,#b9a07e);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .subtitle{margin-top:10px;color:#ded6c4;font-size:1.0rem;max-width:60ch}
+  .subtitle strong{color:#fff;font-weight:600}
+  .meta-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .chip{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(217,200,172,.55);
+    padding:8px 14px;border-radius:999px;
+    font-size:.85rem;font-weight:500;color:#f5f0e6;
+  }
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  section{margin-top:26px}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-top:3px solid var(--coklat);
+    border-radius:var(--radius);
+    box-shadow:0 6px 24px rgba(61,44,26,.08);
+    padding:30px 30px;
+  }
+  .card-head{
+    display:flex;align-items:flex-start;gap:14px;
+    margin-bottom:18px;padding-bottom:16px;
+    border-bottom:1px solid var(--line);
+  }
+  .icon-box{
+    width:44px;height:44px;border-radius:12px;flex-shrink:0;
+    display:grid;place-items:center;color:#f5f0e6;font-size:1.15rem;
+    background:linear-gradient(135deg,#291d12 10%,#5e432c 65%,#b9a07e 140%);
+    border:1px solid rgba(185,160,126,.5);
+  }
+  .card-head h2{
+    font-family:'Playfair Display',serif;
+    font-size:1.35rem;color:var(--coklat);line-height:1.3;
+  }
+  .card-head p{font-size:.88rem;color:var(--muted);margin-top:2px}
+  .bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .bio-item{display:grid;grid-template-columns:170px 1fr;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);font-size:.93rem}
+  .bio-item:nth-child(odd){background:#f7f3ea}
+  .bio-item:nth-child(even){background:#fcfbf7}
+  .bio-grid .bio-item:nth-last-child(-n+2){border-bottom:none}
+  .bio-item dt{color:var(--muted);font-weight:500}
+  .bio-item dd{color:var(--coklat);font-weight:600}
+  .bio-item dd span{font-weight:400;color:var(--ink)}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .edu-grid{display:grid;gap:16px;margin-top:4px;list-style:none;padding-left:0}
+  .edu-item{
+    position:relative;
+    border-left:3px solid var(--emas);
+    padding:2px 0 2px 18px;margin-top:6px;
+  }
+  .edu-item h3{font-size:1rem;color:var(--coklat)}
+  .edu-badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#4f3725;background:var(--krem);border:1px solid var(--line);padding:3px 11px;border-radius:999px;margin:2px 0 6px}
+  .edu-badge.now{color:#f5f0e6;background:linear-gradient(135deg,#5e432c,#3d2c1a);border-color:#5e432c}
+  .edu-item p{font-size:.9rem;color:var(--muted)}
+  .quote{
+    margin-top:16px;padding:16px 18px;border-radius:12px;
+    background:linear-gradient(120deg,#f5f0e6,#e9e2cf);
+    border:1px solid var(--line);border-left:3px solid var(--emas);
+    color:#4f3725;font-size:.92rem;font-style:italic;
+  }
+  .skill{margin:16px 0 4px}
+  .skill-top{display:flex;justify-content:space-between;align-items:center;font-size:.92rem;margin-bottom:8px}
+  .skill-top b{color:var(--coklat)}
+  .skill-top span{font-weight:700;color:#4f3725;background:var(--krem);border:1px solid var(--line);padding:2px 12px;border-radius:999px;font-size:.8rem}
+  .bar{height:10px;background:#e9e2cf;border-radius:999px;overflow:hidden;border:1px solid #ddd5c2}
+  .bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#291d12 0%,#6f563c 55%,#b9a07e 100%)}
+  .skill-desc{font-size:.86rem;color:var(--muted);margin-top:6px}
+  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .tag{font-size:.82rem;font-weight:600;color:#4f3725;background:#f5f0e6;border:1px solid var(--line);padding:7px 14px;border-radius:999px}
+  .hobi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
+  .hobi{
+    border:1px solid var(--line);border-radius:14px;padding:18px 16px;
+    background:linear-gradient(180deg,#fcfbf7,#f5f0e6);
+    text-align:center;transition:.2s;
+  }
+  .hobi:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(61,44,26,.18);border-color:var(--emas)}
+  .hobi .e{font-size:1.6rem;filter:sepia(.25)}
+  .hobi b{display:block;margin:8px 0 4px;color:var(--coklat);font-size:.92rem}
+  .hobi p{font-size:.82rem;color:var(--muted);line-height:1.55}
+  .cta{
+    margin:26px 0 8px;border-radius:20px;padding:36px 32px;
+    color:#fff;text-align:center;position:relative;overflow:hidden;
+    background:linear-gradient(135deg,#241a11 0%,#3d2c1a 45%,#4f3725 100%);
+    border:1px solid rgba(185,160,126,.55);
+  }
+  .cta::before{
+    content:"";position:absolute;inset:0;opacity:.5;
+    background:radial-gradient(500px 220px at 20% 0%,rgba(185,160,126,.3),transparent 60%),
+               radial-gradient(500px 220px at 85% 100%,rgba(185,160,126,.2),transparent 60%);
+  }
+  .cta h2{position:relative;font-family:'Playfair Display',serif;font-size:1.6rem;color:#f5f0e6}
+  .cta p{position:relative;color:#ded6c4;font-size:.93rem;max-width:56ch;margin:8px auto 20px}
+  .cta .row{position:relative;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn-light{background:linear-gradient(135deg,#f5f0e6,#e0d4bb);color:#3d2c1a;border:1px solid #e0d4bb}
+  .btn-outline{border:1px solid rgba(217,200,172,.6);color:#f5f0e6;background:transparent}
+  .btn-outline:hover{background:rgba(185,160,126,.15)}
+  footer{padding:26px 0 40px;text-align:center;color:var(--muted);font-size:.84rem}
+  footer b{color:var(--coklat)}
+  .divider{width:64px;height:3px;border-radius:999px;margin:0 auto 12px;background:linear-gradient(90deg,#3d2c1a,#b9a07e,#3d2c1a)}
+  @media(max-width:860px){
+    .hero-inner{grid-template-columns:1fr;text-align:center;padding:32px 24px}
+    .subtitle{margin-left:auto;margin-right:auto}
+    .meta-chips,.hero-actions{justify-content:center}
+    .two-col{grid-template-columns:1fr}
+    .bio-grid{grid-template-columns:1fr}
+    .bio-grid .bio-item:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+    .bio-grid .bio-item:last-child{border-bottom:none}
+    .hobi-grid{grid-template-columns:1fr 1fr}
+    .nav-links{display:none}
+  }
+  @media(max-width:520px){
+    .hobi-grid{grid-template-columns:1fr}
+    .bio-item{grid-template-columns:1fr;gap:2px}
+    .card{padding:22px 20px}
+    .cta{padding:26px 20px}
+  }
+  @media print{
+    nav,.hero-actions,.cta,.no-print,.wa-float,.bg-anim,.cartoons,.sp-embed,.btn-outline{display:none !important}
+    body{background:#fff}
+    .reveal{opacity:1 !important;transform:none !important}
+    .hero{background:#3d2c1a !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .hero,.card{box-shadow:none}
+    section{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="bg-anim" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="cartoons" aria-hidden="true">
+  <span class="cartoon c1">⭐</span>
+  <span class="cartoon c2">☁️</span>
+  <span class="cartoon c3">✨</span>
+  <span class="cartoon c4">🌸</span>
+  <span class="cartoon c5">💫</span>
+  <span class="cartoon c6">🦋</span>
+  <span class="cartoon c7">💖</span>
+  <span class="cartoon c8">🌟</span>
+  <span class="cartoon b1 bounce">😊</span>
+</div>
+<a class="wa-float" href="https://wa.me/6285150593309?text=Halo%20Reva%2C%20saya%20melihat%20CV%20Anda%20di%20website.%20Saya%20ingin%20bertanya." target="_blank" rel="noopener" title="Chat WhatsApp Reva">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.8 6.5L3 29l6.7-1.8c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.1 1.1-3.9-.3-.4c-1-1.7-1.6-3.7-1.6-5.7C5.2 10 10 5.2 16 5.2S26.8 10 26.8 16 22 26.6 16 26.6zm6-8.1c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.6-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.1.2 2.2 3.3 5.3 4.6.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+  Chat WhatsApp
+</a>
+<div class="topbar"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#atas">
+      <span class="brand-mark">RR</span>
+      <span><b>Reva Rahmalia Putri</b><small>Curriculum Vitae</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#profil">Profil</a>
+      <a href="#biodata">Data Diri</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#skill">Keahlian</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#musik">Musik</a>
+    </div>
+    <a class="btn btn-primary no-print" href="#" onclick="window.print();return false;">&#128438; Cetak / PDF</a>
+  </div>
+</nav>
+
+<div class="wrap" id="atas">
+
+  <header class="hero" id="profil">
+    <div class="hero-inner">
+      <div class="photo-wrap">
+        <div class="photo">
+          <div><span>RR</span><small>Reva Rahmalia Putri</small></div>
+          <img src="foto-reva.jpeg" alt="Foto Reva Rahmalia Putri">
+        </div>
+        <div class="photo-badge">&#10022; Formal &bull; Elegan &bull; Profesional</div>
+      </div>
+      <div>
+        <div class="eyebrow"><i></i> Curriculum Vitae &mdash; Profil Profesional</div>
+        <h1>Halo, saya <em>Reva Rahmalia Putri</em></h1>
+        <p class="subtitle">
+          Siswa <strong>SMKN Sukaresik</strong> yang disiplin, komunikatif, dan antusias di bidang
+          teknologi jaringan. Berpengalaman dasar dalam <strong>konfigurasi MikroTik</strong> dan
+          <strong>desain topologi jaringan</strong>, serta terbiasa bekerja sama dalam tim.
+        </p>
+        <div class="meta-chips">
+          <span class="chip">&#128205; Pagerageung, Kab. Tasikmalaya</span>
+          <a class="chip" href="https://wa.me/6285150593309?text=Halo%20Reva%2C%20saya%20melihat%20CV%20Anda%20di%20website." target="_blank" rel="noopener" title="Chat WhatsApp">&#128222; +62 851-5059-3309</a>
+          <a class="chip" href="mailto:revarhmalia@gmail.com" title="Kirim Email">&#9993; revarhmalia@gmail.com</a>
+          <span class="chip">&#127891; SMKN Sukaresik</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-wa" href="https://wa.me/6285150593309?text=Halo%20Reva%2C%20saya%20melihat%20CV%20Anda%20di%20website.%20Saya%20ingin%20bertanya." target="_blank" rel="noopener">&#128172; Chat WhatsApp</a>
+          <a class="btn btn-primary" href="#biodata">Lihat Data Diri &#8594;</a>
+          <a class="btn btn-ghost" href="#skill">Keahlian Saya</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="biodata">
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box">&#128100;</div>
+        <div><h2>Data Diri &amp; Kontak</h2><p>Informasi identitas dan kontak yang mudah dibaca</p></div>
+      </div>
+      <dl class="bio-grid">
+        <div class="bio-item"><dt>Nama Lengkap</dt><dd>Reva Rahmalia Putri</dd></div>
+        <div class="bio-item"><dt>Tempat, Tgl. Lahir</dt><dd>11 April 2009 <span>&bull; Usia 17 tahun</span></dd></div>
+        <div class="bio-item"><dt>Golongan Darah</dt><dd>O</dd></div>
+        <div class="bio-item"><dt>Alamat</dt><dd><span>Pagerageung, Kab. Tasikmalaya, Jawa Barat</span></dd></div>
+        <div class="bio-item"><dt>No. WhatsApp</dt><dd><a href="https://wa.me/6285150593309" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px dashed var(--emas)">+62 851-5059-3309</a></dd></div>
+        <div class="bio-item"><dt>Email</dt><dd><a href="mailto:revarhmalia@gmail.com" style="color:inherit;text-decoration:none;border-bottom:1px dashed var(--emas)">revarhmalia@gmail.com</a></dd></div>
+        <div class="bio-item"><dt>Pendidikan Terakhir</dt><dd>SMKN Sukaresik <span>&bull; sebelumnya SMPN 2 Pagerageung, SDN Margajaya</span></dd></div>
+        <div class="bio-item"><dt>Status</dt><dd><span>Pelajar &bull; Terbuka untuk kesempatan PKL / magang</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="pendidikan">
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box">&#127891;</div>
+        <div><h2>Portofolio Pendidikan</h2><p>Riwayat pendidikan formal, dari yang terbaru</p></div>
+      </div>
+      <ol class="edu-grid">
+        <li class="edu-item">
+          <span class="edu-badge now">Sedang Berjalan</span>
+          <h3>SMKN Sukaresik</h3>
+          <p>Pendidikan terakhir &mdash; fokus pada dasar-dasar teknologi informasi dan jaringan komputer, meliputi praktik konfigurasi perangkat MikroTik serta perancangan dan dokumentasi topologi jaringan.</p>
+        </li>
+        <li class="edu-item">
+          <span class="edu-badge">Selesai</span>
+          <h3>SMPN 2 Pagerageung</h3>
+          <p>Menempuh pendidikan menengah pertama, membangun kedisiplinan, kemampuan berkomunikasi, dan dasar berpikir logis.</p>
+        </li>
+        <li class="edu-item">
+          <span class="edu-badge">Selesai</span>
+          <h3>SDN Margajaya</h3>
+          <p>Menempuh pendidikan dasar, membentuk karakter, kedisiplinan, serta kebiasaan belajar dan membaca.</p>
+        </li>
+      </ol>
+      <div class="quote">&ldquo;Belajar dengan tekun, bekerja dengan jujur, dan selalu terbuka terhadap hal-hal baru yang positif.&rdquo;</div>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box">&#10022;</div>
+        <div><h2>Tentang Saya</h2><p>Profil singkat profesional</p></div>
+      </div>
+      <p style="font-size:.93rem;color:#3e4763">
+        Saya adalah pribadi yang <strong>ramah, komunikatif, dan mudah beradaptasi</strong>.
+        Memiliki minat besar pada dunia jaringan komputer dan selalu antusias
+        <strong>mencoba hal-hal baru yang menarik</strong> untuk menambah wawasan.
+        Di waktu luang, saya senang membaca, menonton, mendengarkan musik,
+        serta traveling ke alam untuk menyegarkan pikiran.
+      </p>
+      <div class="tags">
+        <span class="tag">Disiplin</span>
+        <span class="tag">Jujur</span>
+        <span class="tag">Kerja Sama Tim</span>
+        <span class="tag">Cepat Belajar</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="skill">
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box">&#9881;</div>
+        <div><h2>Keahlian (Skills)</h2><p>Kompetensi utama yang mendukung dunia kerja / PKL</p></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-top"><b>Komunikasi</b><span>90%</span></div>
+        <div class="bar"><i style="width:90%"></i></div>
+        <p class="skill-desc">Mampu menyampaikan pendapat dengan sopan dan jelas, aktif berdiskusi, serta terbiasa presentasi dan kerja kelompok.</p>
+      </div>
+      <div class="skill">
+        <div class="skill-top"><b>Konfigurasi MikroTik</b><span>80%</span></div>
+        <div class="bar"><i style="width:80%"></i></div>
+        <p class="skill-desc">Dasar setting MikroTik: konfigurasi IP address, DHCP server/client, NAT, firewall sederhana, hotspot, dan backup-restore konfigurasi.</p>
+      </div>
+      <div class="skill">
+        <div class="skill-top"><b>Desain Topologi Jaringan</b><span>85%</span></div>
+        <div class="bar"><i style="width:85%"></i></div>
+        <p class="skill-desc">Merancang topologi LAN sederhana (star, mesh), pengalamatan IP/subnetting dasar, dan dokumentasi diagram jaringan yang rapi.</p>
+      </div>
+
+      <div class="tags">
+        <span class="tag">MikroTik Winbox</span>
+        <span class="tag">IP Addressing</span>
+        <span class="tag">DHCP &amp; NAT</span>
+        <span class="tag">Cisco Packet Tracer</span>
+        <span class="tag">Dokumentasi Jaringan</span>
+        <span class="tag">Public Speaking Dasar</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobi">
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box">&#9825;</div>
+        <div><h2>Hobi &amp; Minat</h2><p>Kegiatan positif yang membentuk karakter dan kreativitas</p></div>
+      </div>
+      <div class="hobi-grid">
+        <div class="hobi"><div class="e">&#128214;</div><b>Membaca</b><p>Menambah wawasan dan melatih fokus serta imajinasi.</p></div>
+        <div class="hobi"><div class="e">&#127910;</div><b>Menonton</b><p>Menikmati film edukatif dan hiburan yang inspiratif.</p></div>
+        <div class="hobi">
+          <div class="e">&#127911;</div><b>Mendengar Musik</b>
+          <p>Relaksasi dan meningkatkan mood serta kreativitas.</p>
+          <a class="mini-btn" href="https://open.spotify.com/artist/4IWBUUAFIplrNtaOHcJPRM?si=ou-EolJVRwitMhQQQ_gSWg" target="_blank" rel="noopener">&#9654; Playlist Spotify</a>
+        </div>
+        <div class="hobi"><div class="e">&#128161;</div><b>Hal Baru yang Menarik</b><p>Antusias mengeksplorasi ilmu dan pengalaman baru.</p></div>
+        <div class="hobi"><div class="e">&#127795;</div><b>Traveling ke Alam</b><p>Menyegarkan pikiran dan menumbuhkan rasa syukur.</p></div>
+        <div class="hobi"><div class="e">&#129309;</div><b>Bersosialisasi</b><p>Melatih komunikasi dan empati lewat interaksi positif.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="musik">
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box">&#127925;</div>
+        <div><h2>Playlist Favorit</h2><p>Musik yang menemani belajar dan hari-hari saya &mdash; diputar lewat Spotify</p></div>
+      </div>
+      <iframe class="sp-embed" src="https://open.spotify.com/embed/artist/4IWBUUAFIplrNtaOHcJPRM?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Playlist Spotify favorit Reva"></iframe>
+      <div class="tags">
+        <a class="tag" href="https://open.spotify.com/artist/4IWBUUAFIplrNtaOHcJPRM?si=ou-EolJVRwitMhQQQ_gSWg" target="_blank" rel="noopener" style="text-decoration:none">&#127925; Buka Playlist di Spotify</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Siap berkontribusi &amp; terus belajar</h2>
+    <p>CV ini disusun secara ringkas dan profesional untuk keperluan lamaran PKL, magang, atau kerja sama proyek. Silakan hubungi saya melalui WhatsApp atau email di atas.</p>
+    <div class="row">
+      <a class="btn btn-wa" href="https://wa.me/6285150593309?text=Halo%20Reva%2C%20saya%20melihat%20CV%20Anda%20dan%20ingin%20berdiskusi." target="_blank" rel="noopener">&#128172; Chat WhatsApp Sekarang</a>
+      <a class="btn btn-light" href="#" onclick="window.print();return false;">&#128438; Unduh / Cetak CV</a>
+      <a class="btn btn-outline" href="#atas">&#8593; Kembali ke Atas</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="divider"></div>
+    <div><b>Reva Rahmalia Putri</b> &bull; +62 851-5059-3309 &bull; revarhmalia@gmail.com</div>
+    <div>&copy; 2026 &mdash; Curriculum Vitae. Dibuat dengan rapi dan profesional.</div>
+  </footer>
+
+</div>
+<script>
+  /* Animasi muncul saat digulir (aman: class ditambahkan lewat JS, jadi tetap tampil jika JS mati) */
+  (function () {
+    var els = document.querySelectorAll('.hero, .card, .cta, .hobi');
+    if (!('IntersectionObserver' in window)) { return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function (el, i) {
+      el.classList.add('reveal');
+      el.style.transitionDelay = (Math.min(i, 6) * 60) + 'ms';
+      io.observe(el);
+    });
+  })();
+</script>
+</body>
+</html>
